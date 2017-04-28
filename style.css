@@ -172,7 +172,7 @@ hr {
 
 .screenshot {
   box-shadow: 6px 6px 20px #d6d6d6;
-  height: 300px;
+  width: 80%;
   margin:auto;
 }
 
