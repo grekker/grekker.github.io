@@ -1,0 +1,175 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  line-height: 1.9;
+  font-size: 15px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+hr {
+  color: #cccccc;
+}
+
+#nav-logo {
+  height: 40px;
+  margin: 15px 0px;
+}
+
+.nav-right {
+  float: right;
+  margin-top:17px;
+}
+
+#intro, #features, #audience, #core-concepts  {
+  margin-bottom: 70px;
+}
+
+
+
+#hero {
+  width: 100%;
+  height: 400px;
+  background: url('images/hero.jpg');
+  background-size: cover;
+}
+
+#hero h1{
+  font-size: 3rem;
+  color:#fff;
+  position: absolute;
+  right: 50;
+  top: 150;
+}
+
+#intro {
+  background-color: #FCFCFC;
+  border-bottom: 1px solid #EAEAEA;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.about-logo {
+  height: 150px;
+}
+
+.about-tagline {
+  font-size: 1.2rem;
+}
+
+#features {
+  text-align: center;
+}
+
+#features .col-md-4 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#audience p {
+  padding: 10px 0;
+}
+
+#core-concepts .titled {
+	border-top: 1px solid #cccccc;
+	text-align: center;
+  margin-bottom: 50px;
+}
+
+#core-concepts .titled:after {
+	content: 'Core Concepts';
+	display: inline-block;
+	position: relative;
+	top: -18px;
+	padding: 0 40px;
+	background: #fff;
+	color: #000;
+	font-size: 18px
+}
+
+#core-concepts h4 {
+  margin-top:10px;
+  margin-bottom:20px;
+}
+
+
+.feature-list {
+  text-align: center;
+}
+
+.feature-icon {
+  height:35px;
+  margin:0 auto;
+}
+
+#next-steps {
+  margin-bottom: 75px;
+}
+
+#next-steps h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#call-to-action {
+  background: url('images/connect_green.png');
+  padding: 20px 0;
+  color: #fff;
+}
+
+#call-to-action .col-md-4 {
+  padding: 0 50px;
+  text-align: center;
+}
+
+
+#footer {
+  height: 50px;
+}
+
+
+.form-control {
+  border: 1px solid rgba(0,0,0,.02);
+}
+
+.btn-primary {
+  background-color: #00bcd4;
+  border-color: #10aec2;
+  cursor: pointer;
+}
+
+.btn-success {
+  width: 100%;
+  background-color: #e49541;
+  border-color: #b8895c;
+  cursor: pointer;
+}
+
+.btn-success:hover {
+  background-color: #da7f15;
+  border-color: #a26d3b;
+}
+
+.btn-primary:hover {
+  background-color: #06abc1;
+  border-color: #0d93a4;
+}
+
+.screenshot {
+  box-shadow: 6px 6px 20px #d6d6d6;
+  height: 300px;
+  margin:auto;
+}
