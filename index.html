@@ -217,7 +217,7 @@
         $(".main-entry .title").html(results[0].title);
         $(".main-entry .summary").html(results[0].text);
         $(".main-entry .link a").attr("href", results[0].link);
-        $(".main-entry .post-meta").html(results[0].meta);
+        //$(".main-entry .post-meta").html(results[0].meta);
 
         for(var i=0; i<6; i++){
           $(".other-entries").append('<li class="entry-"'+i+'><span class="date">'+results[i].date+'</span><span class="middotDivider u-fontSize12"></span><span class="title"><a class="other-entries-link" href="'+results[0].link+'">'+results[i].title+'</a></span></li>');
