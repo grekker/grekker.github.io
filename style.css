@@ -259,3 +259,7 @@ a, a:hover {
 .post-meta .u-flexCenter {
   margin-bottom: 20px!important;
 }
+
+.postMetaInline > a {
+  display: none;
+}
