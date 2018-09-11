@@ -115,26 +115,6 @@
       <hr />
     </div>
 
-    <div id="blog">
-      <div class="row">
-        <div class="col-md-1">
-          <a href="https://medium.com/valence-data" target="_blank"><img src="images/medium-logo.png" style="height:30px;margin-top:3px;"/></a>
-        </div>
-        <div class="col-md-5">
-          <div class="main-entry">
-            <div class="post-meta"></div>
-            <h2 class="title"></h2>
-            <p class="summary"></p>
-            <span class="link"><a style="font-size:14px;">Read More...</a></span>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <ul class="other-entries">
-          </ul>
-        </div>
-      </div>
-    </div>
-
     <div id="next-steps" style="text-align:center;">
       <h2>Help us connect</h2>
       <p>
@@ -199,34 +179,6 @@
 </body>
 
 <script>
-
-  /*$.getJSON( "http://medium.com/@bryantaxs/latest?format=json", function(data) {
-    var obj = jQuery.parseJSON(data);
-    console.log(obj);
-  });*/
-
-  $.ajax({
-
-      url: "https://api.apifier.com/v1/QZQPXbHLAv4q3c9kc/crawlers/cNvhuS5SkBXGbeMnf/lastExec/results?token=vWEy5ixt5y7nG9eWJ7d4smntG&status=SUCCEEDED&format=json",
-      type: "GET",
-      success: function (response) {
-
-        var results =response[0].pageFunctionResult;
-        console.log(results);
-
-        $(".main-entry .title").html(results[0].title);
-        $(".main-entry .summary").html(results[0].text);
-        $(".main-entry .link a").attr("href", results[0].link);
-        //$(".main-entry .post-meta").html(results[0].meta);
-
-        for(var i=0; i<6; i++){
-          $(".other-entries").append('<li class="entry-"'+i+'><span class="date">'+results[i].date+'</span><span class="middotDivider u-fontSize12"></span><span class="title"><a class="other-entries-link" href="'+results[0].link+'">'+results[i].title+'</a></span></li>');
-        }
-
-      }
-  });
-
-
   function convertName() {
     var fullName = document.getElementById("name").value;
     document.getElementById("first_name").value = fullName.substr(0,fullName.indexOf(' '));
